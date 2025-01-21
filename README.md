@@ -46,6 +46,11 @@ const listItem = document.createElement('li'); // para cada amigo, é criado um 
         lista.appendChild(listItem); // appendChild = add o elemento <li> ao <ul>
 ~~~~
 
+📍Math.floor() : esta função arredonda o número gerado pelo (Math.random() * listaAmigos.length):
+~~~~javascript
+let indiceAleatorio = Math.floor(Math.random() * listaAmigos.length);
+~~~~
+
 📍uso do git e github: funcionalidades importantissimas para profissionais de tecnologia, garantindo segurança em seus projetos e também divulgação dos mesmos;
 
 
