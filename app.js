@@ -20,4 +20,14 @@ function adicionarAmigo() {
         alert("Este nome já está na lista!"); // apresenta um alerta na tela informando que o nome já existe
         return;
     }
+
+    // Adicionar o nome na lista de amigos
+    listaAmigos.push(nomeAmigo);
+
+    // Limpar o campo de entrada para facilitar a próxima adição
+    campoInput.value = "";
+
+    // Atualizar a lista exibida na página
+    atualizarListaAmigos();
 }
+
