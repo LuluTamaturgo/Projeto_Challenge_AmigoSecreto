@@ -9,7 +9,7 @@ function adicionarAmigo() {
     let campoInput = document.getElementById('amigo');
     let nomeAmigo = campoInput.value.trim(); // Remove espaços extras no início e no fim do texto
 
-    // Verificar se o nome foi preenchido
+    // Verifica se o campo nome foi preenchido
     if (nomeAmigo === "") {
         alert("Por favor, insira um nome."); // apresenta na tela o alerta caso o usuário não informe um nome
         return;
@@ -24,10 +24,10 @@ function adicionarAmigo() {
     // Adicionar o nome na lista de amigos
     listaAmigos.push(nomeAmigo);
 
-    // Limpar o campo de entrada para facilitar a próxima adição
+    // Limpa o campo Nome, deixando branco para proximo amigo 
     campoInput.value = "";
 
-    // Atualizar a lista exibida na página
+    // Atualiza a lista exibida na página
     atualizarListaAmigos();
 }
 
