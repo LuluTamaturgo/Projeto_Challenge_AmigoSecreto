@@ -37,8 +37,7 @@ function atualizarListaAmigos() {
     let lista = document.getElementById('listaAmigos');
     lista.innerHTML = ""; // Limpa a lista antes de atualizá-la
 
-    // Adicionar cada amigo como um item na lista
-    listaAmigos.forEach((amigo) => {
+    listaAmigos.forEach(function(amigo) {
         let itemLista = document.createElement('li'); // Criar um item da lista
         itemLista.textContent = amigo; // Definir o nome do amigo como texto do item
         lista.appendChild(itemLista); // Adicionar o item à lista no HTML
